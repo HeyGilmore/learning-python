@@ -83,10 +83,31 @@ print("Slicing 1: : ", movies[1:])
 print("Slicing : -5: ", movies[:])
 print("How many in the list: ", len(movies))
 
-print("Before Changing: #3",  movies[2])
+print("Before Changing: #3", movies[2])
 movies[2] = "Fred Clause"
-print("After Changing: #3",  movies[2])
+print("After Changing: #3", movies[2])
 
 print()
 print()
 print()
+
+#  Deleting Items from list
+
+print()
+print("______Deleting items from THE LIST______")
+print()
+
+sports = ["basketball", "football", "baseball", "soccer", "bowling", "boxing"]
+pizza_toppings = ["pepperoni", "sausage", "bacon", "pineapple", "spinach"]
+
+
+combo = sports + pizza_toppings
+
+print("2 different list combined :", combo)
+print()
+print("before deletion:", combo)
+del combo[0:6]
+print("after deletion:", combo)
+print()
+print()
+
